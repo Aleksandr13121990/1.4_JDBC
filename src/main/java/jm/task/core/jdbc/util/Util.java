@@ -10,7 +10,7 @@ public class Util {
     private static final String DB_PASSWORD = "springcourse";
 
     public Connection getConnection() {
-        Connection connection = null;
+        Connection connection;
         try {
             connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
         } catch (SQLException e) {
