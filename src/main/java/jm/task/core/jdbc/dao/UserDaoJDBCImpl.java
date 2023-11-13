@@ -80,7 +80,6 @@ public class UserDaoJDBCImpl implements UserDao {
         } catch (SQLException e) {
             throw new RuntimeException("Failed to get all users", e);
         }
-        users.stream().forEach(System.out::println);
         return users;
     }
 
